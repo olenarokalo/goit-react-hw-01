@@ -1,14 +1,14 @@
-import userData from "../../userData.json";
 import Profile from "../Profile/Profile";
+import FriendList from "../FriendList/FriendList";
 
-// import friends from "../../friends.json";
-// import FriendListItem from "./FriendList/FriendList";
+import userData from "../../userData.json";
+import friends from "../../friends.json";
 
 export default function App() {
   return (
     <>
       <Profile user={userData} />
-      {/* <FriendListItem friends={friends} /> */}
+      <FriendList friends={friends} />
     </>
   );
 }
